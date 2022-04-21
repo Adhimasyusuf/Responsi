@@ -6,19 +6,35 @@ using System.Threading.Tasks;
 
 namespace ResponsiPemrograman4536
 {
-    public class Karyawan
+    class Program
     {
-        public Karyawan(string nik, string nama, string gajibulanan)
+        static void Main(string[] args)
         {
-            Nik = nik;
-            Nama = nama;
-            GajiBulanan = gajibulanan;
+            Karyawan kar1 = new Karyawan("190302123", "Ramos", "3000000");
+        
+            Console.WriteLine("Nik: {0}", kar1.Nik);
+            Console.WriteLine("Nama: {0}", kar1.Nama);
+            Console.WriteLine("GajiBulanan: {0}", kar1.GajiBulanan);
+            Console.WriteLine(" ");
+            Karyawan kar2 = new Karyawan("190302124", "Pepe", "2000000");
+            Console.WriteLine("Nik: {0}", kar2.Nik);
+            Console.WriteLine("Nama: {0}", kar2.Nama);
+            Console.WriteLine("GajiBulanan: {0}", kar2.GajiBulanan);
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine("Gaji setelah kenaikan");
+            Console.WriteLine("Nik: {0}", kar1.Nik);
+            Console.WriteLine("Nama: {0}", kar1.Nama);
+            Console.WriteLine("GajiBulanan: 3300000");
+            Console.WriteLine(" ");
+           
+            Console.WriteLine("Nik: {0}", kar2.Nik);
+            Console.WriteLine("Nama: {0}", kar2.Nama);
+            Console.WriteLine("GajiBulanan: 2200000" );
+
+            Console.ReadKey();
         }
 
-        public string Nik { get; set; }
-        public string Nama { get; set; }
-        public string GajiBulanan { get; set; }
-
     }
-
 }
+

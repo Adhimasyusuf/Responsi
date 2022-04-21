@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ResponsiPemrograman4536
+{
+    public class Karyawan
+    {
+        public Karyawan(string nik, string nama, string gajibulanan)
+        {
+            Nik = nik;
+            Nama = nama;
+            GajiBulanan = gajibulanan;
+        }
+
+        public string Nik { get; set; }
+        public string Nama { get; set; }
+        public string GajiBulanan { get; set; }
+
+    }
+
+}
